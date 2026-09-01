@@ -1,0 +1,11 @@
+node_modules/
+.npm-cache/
+*.tgz
+*.log
+.DS_Store
+Thumbs.db
+
+# 全局 gitignore 有 lib/ 规则（构建产物目录），但本插件的 lib/ 是发布产物、
+# 必须纳入版本控制，故重新包含：
+!lib/
+!lib/*.js

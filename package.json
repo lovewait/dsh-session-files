@@ -1,0 +1,39 @@
+{
+  "name": "dsh-session-files",
+  "version": "0.1.0",
+  "description": "列出当前会话的文件：右击工作区/会话行/主窗口（或 Alt+W）在主页右侧弹出只读文件面板，按类型排序、带图标，默认展示一级目录并可逐层展开。A read-only single-session file pointer for the dsh web GUI.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-client-runtime": ">=0.1.0-rc.6"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "workspace",
+    "session",
+    "file-explorer",
+    "readonly"
+  ]
+}

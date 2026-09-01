@@ -1,0 +1,4 @@
+# dsh-session-files bundle patch: mounts this package as one plugin entry.
+- insert:
+    - id: session-files
+      name: dsh-session-files
