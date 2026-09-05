@@ -24,7 +24,7 @@
     "README.md"
   ],
   "peerDependencies": {
-    "@deepseek-ai/dsh-client-runtime": ">=0.1.0-rc.6"
+    "@deepseek-ai/dsh-client-store": ">=0.1.0-rc.6"
   },
   "license": "MIT",
   "keywords": [
